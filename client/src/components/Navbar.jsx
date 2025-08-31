@@ -9,7 +9,7 @@ import {
 } from "../features/auth/authSlice";
 import { useLogoutMutation, useGetProfileQuery } from "../services/authApiSlice";
 import ThemeToggle from "./ThemeToggle";
-import logo from "../assets/fmda.png";
+import logo from "../assets/icon.jpg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -106,13 +106,10 @@ const Navbar = () => {
       <div className="w-4/5 mx-auto px-2">
         <div className="flex justify-between items-center py-2">
           <Link to="/" className="flex items-center ">
-            <img src={logo} alt="FMDA Logo" className="w-12 h-10 sm:w-20 sm:h-14 mr-2" />
+            <img src={logo} alt="FMDA Logo" className="rounded-xl w-12 h-10 sm:w-20 sm:h-14 mr-2" />
             <div className="flex flex-col ">
               <span className="text-base sm:text-xl font-bold leading-tight truncate max-w-[150px] sm:max-w-full">
-                Faridabad Metropolitan
-              </span>
-              <span className="text-sm font-medium text-blue-100 dark:text-gray-300 hidden sm:block">
-                Development Authority
+                Report Management System
               </span>
             </div>
           </Link>
